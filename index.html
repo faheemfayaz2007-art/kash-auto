@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100923">
+
+  <title>KASH AUTO - Login</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+  <div id="recaptcha-container"></div>
+
+  <main class="login-container">
+
+    <div class="top-brand">
+      <div class="brand-icon">K</div>
+      <h1>KASH <span>AUTO</span></h1>
+      <p>Your City. Your Auto. Your Ride.</p>
+    </div>
+
+    <div class="hero">
+      <div class="mountain">🏔️</div>
+      <div class="auto">🛺</div>
+      <div class="hero-text">
+        <span>YOUR JOURNEY</span>
+        <h2>Starts Here.</h2>
+        <p>Discover a smarter way to travel across Kashmir.</p>
+      </div>
+    </div>
+
+    <section class="login-card" id="phoneSection">
+
+      <h2>Welcome Back!</h2>
+      <p class="subtitle">Login or create your account</p>
+
+      <label for="phone">Mobile Number</label>
+
+      <div class="phone-input">
+        <span class="country-code">🇮🇳 +91</span>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter mobile number"
+          maxlength="10"
+          inputmode="numeric"
+        >
+      </div>
+
+      <button id="sendOtpBtn">
+        Continue <span>→</span>
+      </button>
+
+      <div class="secure">
+        <span>🔒</span>
+        Your number is safe and secure
+      </div>
+
+      <p class="terms">
+        By continuing, you agree to our
+        <a href="#">Terms of Service</a> and
+        <a href="#">Privacy Policy</a>.
+      </p>
+
+    </section>
+
+    <section class="login-card otp-card" id="otpSection" hidden>
+
+      <button class="back-btn" id="backBtn">← Back</button>
+
+      <div class="otp-icon">✉️</div>
+
+      <h2>Verify Your Number</h2>
+
+      <p class="subtitle">
+        Enter the OTP sent to your mobile number
+      </p>
+
+      <div class="otp-input">
+        <input type="text" maxlength="6"
+          id="otp" placeholder="Enter 6-digit OTP"
+          inputmode="numeric">
+      </div>
+
+      <button id="verifyBtn">
+        Verify & Continue →
+      </button>
+
+      <p class="resend">
+        Didn't receive OTP?
+        <a href="#" id="resendBtn">Resend OTP</a>
+      </p>
+
+    </section>
+
+    <footer>
+      Made for Kashmir ❤️
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

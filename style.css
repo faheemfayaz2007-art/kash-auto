@@ -1,0 +1,262 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #100923;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  padding: 25px 22px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-brand {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.brand-icon {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #A879FF, #6934D9);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0 auto 12px;
+  box-shadow: 0 5px 25px #8148df55;
+}
+
+.top-brand h1 {
+  font-size: 27px;
+  letter-spacing: 2px;
+}
+
+.top-brand h1 span {
+  color: #B18AFF;
+}
+
+.top-brand p {
+  font-size: 12px;
+  color: #A9A0BD;
+  margin-top: 8px;
+}
+
+.hero {
+  margin-top: 28px;
+  min-height: 215px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 75% 20%, #7544BA, transparent 40%),
+    linear-gradient(145deg, #39206D, #17102E 75%);
+  border: 1px solid #7450AA;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mountain {
+  font-size: 65px;
+  text-align: right;
+  opacity: 0.9;
+}
+
+.auto {
+  font-size: 58px;
+  position: absolute;
+  right: 35px;
+  top: 85px;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
+}
+
+.hero-text span {
+  color: #D1B8FF;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-text h2 {
+  font-size: 27px;
+  margin-top: 5px;
+}
+
+.hero-text p {
+  color: #C2B6D8;
+  font-size: 12px;
+  margin-top: 7px;
+  max-width: 220px;
+  line-height: 1.5;
+}
+
+.login-card {
+  margin-top: 25px;
+  background: #1C1430;
+  border: 1px solid #382653;
+  border-radius: 24px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 35px #00000030;
+}
+
+.login-card h2 {
+  font-size: 23px;
+}
+
+.subtitle {
+  color: #AFA4C2;
+  font-size: 13px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.login-card label {
+  display: block;
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #DDD3EF;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #574078;
+  background: #120D20;
+  border-radius: 13px;
+  padding: 0 12px;
+  height: 55px;
+}
+
+.country-code {
+  font-size: 14px;
+  white-space: nowrap;
+  border-right: 1px solid #574078;
+  padding-right: 12px;
+}
+
+.phone-input input,
+.otp-input input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 12px;
+}
+
+input::placeholder {
+  color: #81768F;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#sendOtpBtn,
+#verifyBtn {
+  width: 100%;
+  height: 55px;
+  margin-top: 20px;
+  border-radius: 13px;
+  background: linear-gradient(100deg, #9456F5, #6429D7);
+  box-shadow: 0 7px 20px #783CEB40;
+}
+
+#sendOtpBtn span {
+  float: right;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.secure {
+  text-align: center;
+  font-size: 11px;
+  color: #B3A8C4;
+  margin-top: 20px;
+}
+
+.terms {
+  color: #8D829F;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+a {
+  color: #B28BFF;
+  text-decoration: none;
+}
+
+.otp-card {
+  text-align: center;
+}
+
+.back-btn {
+  display: block;
+  background: transparent;
+  color: #BCA0FF;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.otp-icon {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.otp-input {
+  margin-top: 25px;
+  height: 55px;
+  border: 1px solid #574078;
+  background: #120D20;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.otp-input input {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.resend {
+  color: #AFA4C2;
+  font-size: 12px;
+  margin-top: 22px;
+}
+
+footer {
+  text-align: center;
+  color: #827590;
+  font-size: 11px;
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+[hidden] {
+  display: none !important;
+}
