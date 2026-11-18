@@ -20,9 +20,10 @@ const otpInput = document.getElementById("otp");
 let confirmationResult = null;
 let recaptchaVerifier = null;
 
+
 function createRecaptcha() {
   if (recaptchaVerifier) {
-    recaptchaVerifier.clear();
+    return recaptchaVerifier;
   }
 
   recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
@@ -34,6 +35,7 @@ function createRecaptcha() {
 
   return recaptchaVerifier;
 }
+
 
 async function sendOTP() {
   const phone = phoneInput.value.trim();
