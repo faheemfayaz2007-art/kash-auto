@@ -20,22 +20,19 @@ const otpInput = document.getElementById("otp");
 let confirmationResult = null;
 let recaptchaVerifier = null;
 
-
 function createRecaptcha() {
-  if (recaptchaVerifier) {
-    return recaptchaVerifier;
+  if (!recaptchaVerifier) {
+    recaptchaVerifier =
+      new firebase.auth.RecaptchaVerifier(
+        "recaptcha-container",
+        {
+          size: "invisible"
+        }
+      );
   }
-
-  recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-    "recaptcha-container",
-    {
-      size: "invisible"
-    }
-  );
 
   return recaptchaVerifier;
 }
-
 
 async function sendOTP() {
   const phone = phoneInput.value.trim();
